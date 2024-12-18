@@ -1,0 +1,74 @@
+/* Configuración global */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #ED1C24 10%, #CF0000 90%);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Contenedor principal del formulario */
+.form-container {
+    background: rgba(255, 255, 255, 0.1); /* Fondo ligeramente transparente */
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Logo */
+.logo img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+/* Título principal */
+h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+h1 .highlight {
+    color: yellow; /* Color especial para "val" */
+}
+
+/* Estilo de los campos de entrada */
+form input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 12px;
+    border: none;
+    border-radius: 25px; /* Bordes redondeados */
+    font-size: 1rem;
+    outline: none;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+    text-align: left;
+}
+
+/* Placeholder personalizado */
+form input::placeholder {
+    color: #777;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+/* Efecto hover en inputs */
+form input:hover, form input:focus {
+    background: #fff;
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+/* Ajuste responsivo */
+@media screen and (max-width: 600px) {
+    .form-container {
+        width: 95%;
+    }
+}
